@@ -1,0 +1,14 @@
+
+title: barbershop__neighborhood
+description: The best barbershop
+baseurl:  "/blog"
+url: "https://ArmenuhiVA.github.io"
+
+
+author:
+  name: Armenuhi
+  email: armenuhivardanyan55@gmail.com
+
+
+markdown: kramdown
+theme: minima 
