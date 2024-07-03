@@ -6,23 +6,23 @@
     </td>
   </tr>
 </table>
-<h1 align="center">💈 Barbearia Alura</h1>
+<h1 align="center">💈 Barbershop Neighborhood</h1>
 
-<p align="center">
+<!-- <p align="center">
   Barbershop project introduced in the first HTML and CSS course of the Fullstack
   road of Grupo Boticário's
   <a href="https://desenvolve.grupoboticario.com.br/">Desenvolve Program</a> 
   in partnership with
   <a href="https://www.alura.com.br/">Alura</a> ✨
-</p>
+</p> -->
 
-<p align="center">
+<!-- <p align="center">
  <a href="#books-subjects">Subjects</a> • 
  <a href="#desktop_computer-demonstration">Demonstration</a> •
  <a href="#woman_technologist-achievements-difficulties-e-improvements">
   Achievements, difficulties and improvements 
  </a>
-</p>
+</p> -->
 
 ## :books: Subjects
 

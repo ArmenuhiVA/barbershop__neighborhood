@@ -6,21 +6,21 @@
     </td>
   </tr>
 </table>
-<h1 align="center">💈 Barbearia Alura</h1>
+<h1 align="center">💈 Barbershop Neighborhood</h1>
 
 <p align="center">
-  Projeto introduzido no primeiro curso de html e css da trilha Fullstack do 
-  <a href="https://desenvolve.grupoboticario.com.br/">Programa Desenvolve</a> 
+  <!-- Project for barbershop
+  <a href="https://desenvolve.grupoboticario.com.br/">Develop Program</a> 
   do Grupo Boticário em parceria com a 
-  <a href="https://www.alura.com.br/">Alura</a> ✨
+  <a href="https://www.alura.com.br/">Alura</a> ✨ -->
 </p>
 
 <p align="center">
- <a href="#books-cursos">Cursos</a> • 
+ <!-- <a href="#books-cursos">Cursos</a> • 
  <a href="#desktop_computer-demonstração">Demonstração</a> •
  <a href="#woman_technologist-acertos-dificuldades-e-melhorias">
   Acertos, dificuldades e melhorias
- </a>
+ </a> -->
 </p>
 
 ## :books: Cursos
