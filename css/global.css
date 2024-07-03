@@ -6,8 +6,10 @@
   --gray-600: #3B3B3B;
   --gray-800: #212121;
   --gray-900: #171717;
-  --orange-500: #CA9B5B;
-  --orange-600: #B58252;
+  --orange-500: #2e98fc;
+  --orange-600: #2e98fc;
+  --red: #ca2a2a;
+  --brown: #8b353e;
 
   --font-text: 'Open Sans', sans-serif;
   --font-decor: 'Oswald', sans-serif;
@@ -110,6 +112,7 @@ input:focus, textarea:focus {
 .primary-btn {
   display: inline-block;
   padding: 1rem 2rem;
+  margin: 20px;
   border-radius: 32px;
   font-family: var(--font-decor);
   letter-spacing: 1px;
