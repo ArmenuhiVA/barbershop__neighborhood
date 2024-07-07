@@ -13,7 +13,8 @@
 
   --font-text: 'Open Sans', sans-serif;
   --font-decor: 'Oswald', sans-serif;
-  --font-heading: 'Playfair Display', serif;
+  --font-heading: 'Oswald', sans-serif;
+  --font-heading-few: 'Playfair Display', serif;
 }
 
 * {
@@ -112,7 +113,7 @@ input:focus, textarea:focus {
 .primary-btn {
   display: inline-block;
   padding: 1rem 2rem;
-  margin: 20px;
+  margin: 0 auto;
   border-radius: 32px;
   font-family: var(--font-decor);
   letter-spacing: 1px;
