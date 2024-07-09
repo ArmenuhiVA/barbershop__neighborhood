@@ -127,12 +127,14 @@
 
   .content-intro__title {
     font-size: 2.5rem;
+    max-width: 600px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .content-intro__title {
     font-size: 2.5rem;
+    max-width: 500px;
   }
 }
 
@@ -151,12 +153,14 @@
 
   .content-intro__title {
     font-size: 2.5rem;
+    max-width: 500px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .content-intro__title {
     font-size: 2.5rem;
+    max-width: 500px;
   }
 }
 
@@ -208,11 +212,13 @@
 @media screen and (min-width: 992px) {
   .content-intro__title {
     font-size: 3.5rem;
+    max-width: 600px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .content-intro__title {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
+    max-width: 600px;
   }
 }

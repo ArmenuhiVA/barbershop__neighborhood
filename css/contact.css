@@ -69,3 +69,8 @@
     font-size: 1.125rem;
   }
 }
+
+.phone-link {
+  color: var(--gray-800);   
+  text-decoration: none; 
+}

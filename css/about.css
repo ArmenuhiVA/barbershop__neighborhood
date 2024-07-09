@@ -13,7 +13,7 @@
   min-width: 320px;
   min-height: 250px;
   z-index: -1;
-  border: 1px solid rgba(202, 155, 91, .5);
+  border: 1px solid var(--orange-500);
   transform: rotate(-90deg);
 }
 
@@ -23,7 +23,7 @@
   top: -3rem;
   left: 3.5rem;
   padding: 0 8px;
-  font-family: var(--font-heading);
+  font-family: var(--font-heading-few);
   font-weight: 700;
   line-height: 1.25rem;
   background-color: var(--white);

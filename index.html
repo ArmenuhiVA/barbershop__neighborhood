@@ -50,11 +50,11 @@
                     Pricing
                   </a>
                 </li>
-                <li class="header__nav-item">
+                <!-- <li class="header__nav-item">
                   <a href="#appointment" class="header__nav-link">
                     Scheduling
                   </a>
-                </li>
+                </li> -->
                 <li class="header__nav-item">
                   <a href="#contact" class="header__nav-link">
                     Contact
@@ -66,7 +66,7 @@
         </div>
 
         <div class="header__content-intro">
-          <span class="content-intro__welcome">
+          <span class="content-intro__welcome" style="color: brown">
             Welcome to Neighborhood Barbershop
           </span>
           <h2 class="content-intro__title">Everything feels better after a haircut </h2>
@@ -74,12 +74,12 @@
             We provide self-esteem and quality to customers.
           </p>
           <a href="https://n1012317.alteg.io/company/959932/personal/select-master?o=" class="primary-btn"
-            target="_blank" style="background-color: var(--brown);">
-            Book now
+            target="_blank">
+            Schedule your appointment
           </a>
-          <a href="#services" class="primary-btn">
+          <!-- <a href="#services" class="primary-btn">
             Our services
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -126,7 +126,7 @@
           we offer thematic space, qualified professionals,
           excellent products and a great location.
         </p>
-        <a href="#contact" class="primary-btn">
+        <a href="#contact" class="primary-btn" style="margin: 20px;">
           Contact
         </a>
       </div>
@@ -190,35 +190,77 @@
           <div class="prices__card">
             <ul class="prices__card-list">
               <li class="prices__card-item">
-                <span class="prices__item-content">Hair</span>
+                <span class="prices__item-content">
+                  Buzz
+                </span>
                 <div class="prices__card-separator"></div>
-                <span class="prices__item-content">$ 70,00</span>
-              </li>
-              <li class="prices__card-item">
-                <span class="prices__item-content">Beard</span>
-                <div class="prices__card-separator"></div>
-                <span class="prices__item-content">$ 55,00</span>
+                <span class="prices__item-content">AMD 5.000</span>
               </li>
               <li class="prices__card-item">
                 <span class="prices__item-content">
-                  Skin cleaning
+                  Styling
                 </span>
                 <div class="prices__card-separator"></div>
-                <span class="prices__item-content">$ 110,00</span>
+                <span class="prices__item-content">AMD 2.000</span>
+              </li>
+              <li class="prices__card-item">
+                <span class="prices__item-content">Haircut</span>
+                <div class="prices__card-separator"></div>
+                <span class="prices__item-content">AMD 8.000</span>
               </li>
               <li class="prices__card-item">
                 <span class="prices__item-content">
-                  Hair + Beard
+                  Kids haircut
                 </span>
                 <div class="prices__card-separator"></div>
-                <span class="prices__item-content">$ 105,00</span>
+                <span class="prices__item-content">AMD 6.000</span>
               </li>
               <li class="prices__card-item">
                 <span class="prices__item-content">
-                  Hair + skin cleaning
+                  Beard styling
                 </span>
                 <div class="prices__card-separator"></div>
-                <span class="prices__item-content">$ 160,00</span>
+                <span class="prices__item-content">AMD 5.000</span>
+              </li>
+              <li class="prices__card-item">
+                <span class="prices__item-content">Haircut and beard styling</span>
+                <div class="prices__card-separator"></div>
+                <span class="prices__item-content">AMD 13.000</span>
+              </li>
+              <li class="prices__card-item">
+                <span class="prices__item-content">
+                  Facial care and black mask
+                </span>
+                <div class="prices__card-separator"></div>
+                <span class="prices__item-content">AMD 4.000</span>
+              </li>
+              <li class="prices__card-item">
+                <span class="prices__item-content">
+                  Hair tinting
+                </span>
+                <div class="prices__card-separator"></div>
+                <span class="prices__item-content">AMD 3.000 - 5.000</span>
+              </li>
+              <li class="prices__card-item">
+                <span class="prices__item-content">
+                  Beard coloring
+                </span>
+                <div class="prices__card-separator"></div>
+                <span class="prices__item-content">AMD 2.000 - 5.000</span>
+              </li>
+              <li class="prices__card-item">
+                <span class="prices__item-content">
+                  Hair removal with wax
+                </span>
+                <div class="prices__card-separator"></div>
+                <span class="prices__item-content">AMD 1.000 - 5.000</span>
+              </li>
+              <li class="prices__card-item">
+                <span class="prices__item-content">
+                  Hair and beard coloring
+                </span>
+                <div class="prices__card-separator"></div>
+                <span class="prices__item-content">AMD 5.000 - 10.000</span>
               </li>
             </ul>
             <a href="https://n1012317.alteg.io/company/959932/personal/select-master?o="
@@ -359,7 +401,7 @@
           </li> -->
           <li class="contact-details__item">
             <img src="./assets/icons/phone.svg" alt="ícone de telefone" class="contact-details__icon">
-            +374-44-16-16-19
+            <a href="tel:+374-44-16-16-19" class="phone-link">+374 44 16 16 19</a>
           </li>
         </ul>
       </div>
@@ -374,7 +416,7 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__info">
+    <!-- <div class="footer__info">
       <div class="footer__info-container">
         <div class="footer__info-content">
           <h4 class="footer__info-title">
@@ -385,21 +427,10 @@
             self-esteem is that it needs to be stimulating.
             It must provide unconditional heat.
           </p>
-          <ul class="footer__social-media">
-            <li class="social-media__item">
-              <a href="https://www.facebook.com/people/Neighborhood/100083338284667/" target="_blank">
-                <img src="./assets/icons/facebook.svg" alt="facebook">
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a href="https://www.instagram.com/barbershop__neighborhood/" target="_blank">
-                <img src="./assets/icons/instagram.svg" alt="instagram">
-              </a>
-            </li>
-          </ul>
+          
         </div>
 
-        <!-- <div class="footer__info-news">
+         <div class="footer__info-news">
           <h5 class="footer__news-title">Newsletter</h5>
           <form class="footer__news-form">
             <input type="email" placeholder="seu@email.com" aria-label="informe seu email para novidades"
@@ -412,15 +443,27 @@
             Stay up to date with our promotions and new products
             and our services.
           </span>
-        </div> -->
+        </div> 
       </div>
-    </div>
+    </div> -->
 
     <div class="footer__copyright">
       <div class="footer__copyright-container">
-        <p class="copyright">
+        <ul class="footer__social-media">
+          <li class="social-media__item">
+            <a href="https://www.facebook.com/people/Neighborhood/100083338284667/" target="_blank">
+              <img src="./assets/icons/facebook.svg" alt="facebook">
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a href="https://www.instagram.com/barbershop__neighborhood/" target="_blank">
+              <img src="./assets/icons/instagram.svg" alt="instagram">
+            </a>
+          </li>
+        </ul>
+        <!-- <p class="copyright">
           Barbershop Neighborhood &copy; 2024. All rights reserved.
-        </p>
+        </p> -->
         <nav class="footer__nav">
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
@@ -434,14 +477,19 @@
             <li class="footer__nav-item">
               <a href="#prices" class="footer__nav-link">Pricing</a>
             </li>
-            <li class="footer__nav-item">
+            <!-- <li class="footer__nav-item">
               <a href="#appointment" class="footer__nav-link">
                 Scheduling
               </a>
-            </li>
+            </li> -->
           </ul>
         </nav>
       </div>
+    </div>
+    <div class="footer__copyright">
+      <p class="copyright">
+        Barbershop Neighborhood &copy; 2024. All rights reserved.
+      </p>
     </div>
   </footer>
 

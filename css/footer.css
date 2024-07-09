@@ -111,7 +111,10 @@
   display: flex;
   gap: 1.5rem;
   list-style-type: none;
+  flex-direction: column;
+  text-align: center;
 }
+
 
 .footer__nav-link {
   text-decoration: none;
@@ -201,6 +204,10 @@
     flex-direction: row;
     padding: 2.5rem;
   }
+  .footer__nav-list{
+    flex-direction: row;
+  }
+  
 }
 
 @media screen and (min-width: 992px) {
@@ -222,4 +229,11 @@
     align-items: start;
     text-align: start;
   }
+  .footer__nav-list{
+    flex-direction: row;
+  }
+}
+
+.copyright {
+  text-align: center;
 }
