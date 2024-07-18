@@ -26,9 +26,11 @@
 }
 
 .services__list {
-  /* display: flex;
-  flex-wrap: wrap; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   gap: 2.5rem;
+  justify-content: center;
 }
 
 .services__item {
@@ -90,11 +92,12 @@
   .services__item-title {
     font-size: 1.25rem;
   }
-  /* .services__item {
-    list-style-type: none;
+  .services__item {
+    /* list-style-type: none;
     justify-content: center;
-    text-align: center;
-  } */
+    text-align: center; */
+    margin-top: 20px;
+  }
 }
 
 @media screen and (min-width: 560px) {
@@ -191,4 +194,8 @@
   .services__item-description {
     max-width: 340px;
   }
+  /* .services__list {
+    flex-direction: column;
+    justify-content: right;
+  } */
 }
