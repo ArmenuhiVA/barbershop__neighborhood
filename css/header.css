@@ -3,10 +3,11 @@
   height: 100vh;
   background-image: url(../assets/images/hero-img.jpg);
   background-size: cover;
-  background-position: center top;
+  background-position: center ;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: var(--gray-800);
+  /* object-fit: none; */
 }
 
 .header__shadow {
@@ -101,7 +102,7 @@
 
 .content-intro__title {
   margin: 1rem 0 1.5rem;
-  letter-spacing: .5px;
+  letter-spacing: 5px;
   text-align: center;
   font-family: var(--font-heading);
   color: var(--white);
