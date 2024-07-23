@@ -6,7 +6,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: var(--gray-800);
-  /* object-fit: none; */
 }
 
 .header__shadow {
