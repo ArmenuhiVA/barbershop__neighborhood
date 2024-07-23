@@ -257,16 +257,29 @@
   }
   .footer__copyright__new{
     position: absolute;
-    padding: 0px
+    padding: 0px;
+   
   }
 
   .copyright__new {
     position: relative; 
     top: -61px;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%);
+  }
+
+  
+  .social-media__item {
+    cursor: pointer;
   }
 }
 
 .copyright__new,
 .copyright {
   text-align: center;
+}
+
+.footer__copyright__new {
+   width: 100%;
 }
