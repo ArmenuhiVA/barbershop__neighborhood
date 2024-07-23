@@ -2,7 +2,7 @@
   height: 100vh;
   background-image: url(../assets/images/hero-img.jpg);
   background-size: cover;
-  background-position: center ;
+  background-position: center;
   background-repeat: no-repeat;
   background-color: var(--gray-800);
 }
@@ -159,6 +159,9 @@
   .content-intro__title {
     font-size: 2.5rem;
     max-width: 500px;
+  }
+  body {
+    background-size: contain;
   }
 }
 
