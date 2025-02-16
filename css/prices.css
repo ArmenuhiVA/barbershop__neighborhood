@@ -96,6 +96,10 @@
     width: 100%;
   }
 
+  .prices__img {
+    object-fit: cover;
+  }
+
   .prices__card {
     align-items: center;
     padding: 2rem 1rem;
