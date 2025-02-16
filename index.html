@@ -12,7 +12,9 @@
   <title>Barbershop Neighborhood</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@400;500&family=Playfair+Display:wght@400;600;700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/about.css">
@@ -22,6 +24,7 @@
   <link rel="stylesheet" href="./css/toast.css">
   <link rel="stylesheet" href="./css/contact.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/gallery.css">
 </head>
 
 <body>
@@ -29,7 +32,7 @@
     <div class="header__shadow">
       <div class="header__content">
         <div class="header__content-hero">
-          <img src="./assets/images/logo.jpg" style="height: 100px; width: 100px; border-radius: 50px;">
+          <img src="./assets/images/logo.jpg" style="height: 100px; width: 100px; border-radius: 50px;" alt="">
           <img src="./assets/icons/menu-icon.svg" alt="abrir menu" class="header__menu-icon">
           <div class="nav-container">
             <img src="./assets/icons/close-icon.svg" alt="fechar menu" class="nav__close-icon">
@@ -50,11 +53,6 @@
                     Pricing
                   </a>
                 </li>
-                <!-- <li class="header__nav-item">
-                  <a href="#appointment" class="header__nav-link">
-                    Scheduling
-                  </a>
-                </li> -->
                 <li class="header__nav-item">
                   <a href="#contact" class="header__nav-link">
                     Contact
@@ -66,397 +64,284 @@
         </div>
 
         <div class="header__content-intro">
-          <!-- <span class="content-intro__welcome" >
-            Welcome to Neighborhood Barbershop
-          </span> -->
           <h2 class="content-intro__title">Everything feels better after a haircut </h2>
-          <!-- <p class="content-intro__message">
-            We provide self-esteem and quality to customers.
-          </p> -->
           <a href="https://n1012317.alteg.io/company/959932/personal/select-master?o=" class="primary-btn"
             target="_blank">
             Schedule your appointment
           </a>
-          <!-- <a href="#services" class="primary-btn">
-            Our services
-          </a> -->
         </div>
       </div>
     </div>
   </div>
 
-  <div>
-    <section id="about" class="about">
-      <div class="about__img-container">
-        <div class="about__since-detail">
-          <span class="since-detail__year">
-            <em>since</em> <br> 2022
-          </span>
-        </div>
-        <img src="./assets/images/barber-cutting.jpg" alt="barbeiro fazendo a barba do cliente" class="about__img">
+  <section id="about" class="about">
+    <div class="about__img-container">
+      <div class="about__since-detail">
+        <span class="since-detail__year">
+          <em>since</em> <br> 2022
+        </span>
       </div>
+      <img src="./assets/images/barber-cutting.jpg" alt="barbeiro fazendo a barba do cliente" class="about__img">
+    </div>
 
-      <div class="about__details">
-        <span class="tag">Our story</span>
-        <h2 class="section__heading about__details-title">
-          Traditional Barbershop & Contemporary <br> Grooming
-        </h2>
-        <p class="about__details-paragraph">
-          Located in the heart of the city of Yerevan,
-          Our barbershop brings the best to the market
-          for your hair and beard.
-        </p>
-        <p class="about__details-paragraph">
-          We offer experienced professionals who are attuned to
-          changes in the world of fashion. Service is standard
-          of excellence and agility, guaranteeing quality and
-          satisfaction of our customers.
-        </p>
-      </div>
-    </section>
+    <div class="about__details">
+      <span class="tag">Our story</span>
+      <h2 class="section__heading about__details-title">
+        Traditional Barbershop & Contemporary <br> Grooming
+      </h2>
+      <p class="about__details-paragraph">
+        Located in the heart of the city of Yerevan,
+        Our barbershop brings the best to the market
+        for your hair and beard.
+      </p>
+      <p class="about__details-paragraph">
+        We offer experienced professionals who are attuned to
+        changes in the world of fashion. Service is standard
+        of excellence and agility, guaranteeing quality and
+        satisfaction of our customers.
+      </p>
+    </div>
+  </section>
 
-    <section id="services" class="services">
-      <div class="services-hero">
-        <span class="tag">Barbershop Neighborhood</span>
-        <h3 class="section__heading services__title">
-          Our services
-        </h3>
-        <p class="services-hero__description">
-          In addition to great reviews from our customers,
-          we offer thematic space, qualified professionals,
-          excellent products and a great location.
-        </p>
-        <a href="#contact" class="primary-btn" style="margin: 20px;">
-          Contact
-        </a>
-      </div>
-
-      <div class="services-content">
-        <ul class="services__list">
-          <li class="services__item">
-            <img src="./assets/icons/hairdryer.svg" alt="secador de cabelo" class="services__item-icon">
-            <h4 class="services__item-title">Hair Styling</h4>
-            <p class="services__item-description">
-              We execute the desired style using products
-              professional and suitable for each hair type.
-              Additionally, we can help you find the best
-              cut according to your face.
-            </p>
-          </li>
-          <li class="services__item">
-            <img src="./assets/icons/razor.svg" alt="navalha" class="services__item-icon">
-            <h4 class="services__item-title">Beard Design</h4>
-            <p class="services__item-description">
-              A well-groomed beard makes all the difference in appearance
-              and self-esteem of a man, then we go through all
-              cleaning, hydration and design process with products
-              that respect your skin type.
-            </p>
-          </li>
-          <!-- <li class="services__item">
-            <img src="./assets/icons/barber-shop.svg" alt="loja da barbearia" class="services__item-icon">
-            <h4 class="services__item-title">Consultation</h4>
-            <p class="services__item-description">
-              We offer an environment for those clients who are
-              I am interested in our products and professionals
-              prontos para recommendar o que for melhor para:
-              maintenance da sua appearance!
-            </p>
-          </li> -->
-          <li class="services__item">
-            <img src="./assets/icons/soap.svg" alt="sabonete facial" class="services__item-icon">
-            <h4 class="services__item-title">Skin cleaning</h4>
-            <p class="services__item-description">
-              We all need to take good care of our skin to
-              ensure a healthy appearance and nothing better than
-              that cleaning with quality products and
-              professionals who understand the subject.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="prices" class="prices">
-      <div class="prices-container">
-        <div class="prices-heading">
-          <span class="tag">Barbershop Neighborhood</span>
-          <h2 class="section__heading prices-heading__title">
-            Our Prices
-          </h2>
+  <section id="gallery">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo1.jpg" alt="" />
         </div>
-
-        <div class="prices__card-container">
-          <div class="prices__card">
-            <ul class="prices__card-list">
-              <!-- <li class="prices__card-item">
-                <span class="prices__item-content">
-                  Buzz
-                </span>
-                <div class="prices__card-separator"></div>
-                <span class="prices__item-content">AMD 5.000</span>
-              </li> -->
-              <li class="prices__card-item">
-                <span class="prices__item-content">
-                  Styling
-                </span>
-                <div class="prices__card-separator"></div>
-                <span class="prices__item-content">AMD 2.000</span>
-              </li>
-              <li class="prices__card-item">
-                <span class="prices__item-content">
-                  Facial care and black mask
-                </span>
-                <div class="prices__card-separator"></div>
-                <span class="prices__item-content">AMD 5.000</span>
-              </li>
-              <li class="prices__card-item">
-                <span class="prices__item-content">
-                  Kids haircut
-                </span>
-                <div class="prices__card-separator"></div>
-                <span class="prices__item-content">AMD 6.000</span>
-              </li>
-              <li class="prices__card-item">
-                <span class="prices__item-content">Haircut and beard styling</span>
-                <div class="prices__card-separator"></div>
-                <span class="prices__item-content">AMD 10.000</span>
-              </li>
-              <li class="prices__card-item">
-                <span class="prices__item-content">Haircut</span>
-                <div class="prices__card-separator"></div>
-                <span class="prices__item-content">AMD 6.000 - 8.000</span>
-              </li>
-              <li class="prices__card-item">
-                <span class="prices__item-content">
-                  Beard styling
-                </span>
-                <div class="prices__card-separator"></div>
-                <span class="prices__item-content">AMD 4.000 - 5.000</span>
-              </li>
-
-
-              <!-- <li class="prices__card-item">
-                <span class="prices__item-content">
-                  Hair tinting
-                </span>
-                <div class="prices__card-separator"></div>
-                <span class="prices__item-content">AMD 3.000 - 5.000</span>
-              </li> -->
-              <li class="prices__card-item">
-                <span class="prices__item-content">
-                  Beard coloring
-                </span>
-                <div class="prices__card-separator"></div>
-                <span class="prices__item-content">AMD 2.000 - 5.000</span>
-              </li>
-              <li class="prices__card-item">
-                <span class="prices__item-content">
-                  Hair coloring
-                </span>
-                <div class="prices__card-separator"></div>
-                <span class="prices__item-content">AMD 3.000 - 5.000</span>
-              </li>
-              <li class="prices__card-item">
-                <span class="prices__item-content">
-                  Hair removal with wax
-                </span>
-                <div class="prices__card-separator"></div>
-                <span class="prices__item-content">AMD 1.000 - 3.000</span>
-              </li>
-              <li class="prices__card-item">
-                <span class="prices__item-content">
-                  Hair and beard coloring
-                </span>
-                <div class="prices__card-separator"></div>
-                <span class="prices__item-content">AMD 5.000 - 10.000</span>
-              </li>
-            </ul>
-            <a href="https://n1012317.alteg.io/company/959932/personal/select-master?o="
-              class="primary-btn prices__card-btn" target="_blank">
-              Schedule your appointment
-            </a>
-          </div>
-
-          <img src="./assets/images/barber-working.jpg" alt="nosso barbeiro cortando cabelo" class="prices__img"
-            style="object-fit: cover">
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo2.jpg" alt="" />
         </div>
-
-        <!-- <div class="prices__barber-stats">
-          <div class="barber-stats__data">
-            <strong class="barber-stats__number">65</strong>
-            <span class="barber-stats__legend">Clientes</span>
-          </div>
-
-          <div class="barber-stats__data">
-            <strong class="barber-stats__number">40</strong>
-            <span class="barber-stats__legend">Produtos</span>
-          </div>
-
-          <div class="barber-stats__data">
-            <strong class="barber-stats__number">12</strong>
-            <span class="barber-stats__legend">Clientes</span>
-          </div>
-
-          <div class="barber-stats__data">
-            <strong class="barber-stats__number">38</strong>
-            <span class="barber-stats__legend">Produtos</span>
-          </div>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo3.jpg" alt="" />
         </div>
-      </div> -->
-    </section>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo4.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo5.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo6.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo7.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo8.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo9.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo10.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo11.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo12.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo13.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo14.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo15.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo16.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo17.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo18.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo20.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/gallery/photo21.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- <section id="appointment" class="appointment">
-      <span class="tag">Barbershop Neighborhoods</span>
-      <h3 class="section__heading appointment__title">
-        Scheduling
+  <section id="services" class="services">
+    <div class="services-hero">
+      <span class="tag">Barbershop Neighborhood</span>
+      <h3 class="section__heading services__title">
+        Our services
       </h3>
+      <p class="services-hero__description">
+        In addition to great reviews from our customers,
+        we offer thematic space, qualified professionals,
+        excellent products and a great location.
+      </p>
+      <a href="#contact" class="primary-btn" style="margin: 20px;">
+        Contact
+      </a>
+    </div>
 
-      <form class="appointment__form">
-        <div class="appointment__form-field">
-          <input type="text" id="name" class="appointment__input" placeholder="Nome" required>
-          <label for="name" class="appointment__label">
-            Name
-          </label>
-        </div>
+    <div class="services-content">
+      <ul class="services__list">
+        <li class="services__item">
+          <img src="./assets/icons/hairdryer.svg" alt="secador de cabelo" class="services__item-icon">
+          <h4 class="services__item-title">Hair Styling</h4>
+          <p class="services__item-description">
+            We execute the desired style using products
+            professional and suitable for each hair type.
+            Additionally, we can help you find the best
+            cut according to your face.
+          </p>
+        </li>
+        <li class="services__item">
+          <img src="./assets/icons/razor.svg" alt="navalha" class="services__item-icon">
+          <h4 class="services__item-title">Beard Design</h4>
+          <p class="services__item-description">
+            A well-groomed beard makes all the difference in appearance
+            and self-esteem of a man, then we go through all
+            cleaning, hydration and design process with products
+            that respect your skin type.
+          </p>
+        </li>
+        <li class="services__item">
+          <img src="./assets/icons/soap.svg" alt="sabonete facial" class="services__item-icon">
+          <h4 class="services__item-title">Skin cleaning</h4>
+          <p class="services__item-description">
+            We all need to take good care of our skin to
+            ensure a healthy appearance and nothing better than
+            that cleaning with quality products and
+            professionals who understand the subject.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-        <div class="appointment__form-field">
-          <input type="email" id="email" class="appointment__input" placeholder="Email"
-            aria-placeholder="seunome@email.com" required>
-          <label for="email" class="appointment__label">
-            Email
-          </label>
-        </div>
-
-        <div class="appointment__form-field">
-          <input type="tel" id="telephone" class="appointment__input" placeholder="Telefone"
-            aria-placeholder="(99)99999-9999" required>
-          <label for="telephone" class="appointment__label">
-            Telephone
-          </label>
-        </div>
-
-        <div class="appointment__form-field">
-          <textarea rows="4" id="message" class="appointment__textarea" placeholder="Mensagem"></textarea>
-          <label for="message" class="appointment__label">
-            Message
-          </label>
-        </div>
-
-        <fieldset class="appointment__fieldset">
-          <legend class="appointment__fieldset-legend">
-            How do you prefer us to contact you?
-          </legend>
-          <label for="radio-whatsapp" class="appointment__legend-label">
-            <input type="radio" id="radio-whatsapp" name="contact" value="whatsapp" class="appointment__radio-input"
-              checked>
-            Whatsapp
-          </label>
-          <label for="radio-email" class="appointment__legend-label">
-            <input type="radio" id="radio-email" name="contact" value="email" class="appointment__radio-input">
-            Email
-          </label>
-          <label for="radio-call" class="appointment__legend-label">
-            <input type="radio" id="radio-call" name="contact" value="call" class="appointment__radio-input">
-            Connection
-          </label>
-        </fieldset>
-
-        <label class="appointment__legend-label checkbox">
-          <input type="checkbox" class="appointment__checkbox-input">
-          Would you like to receive our news by email?
-        </label>
-
-        <button type="submit" class="primary-btn appointment__form-btn">
-          Send
-        </button>
-      </form>
-
-      <span class="appointment__schedule">
-        We open on weekdays from 8am to 8pm and on Saturdays until 6pm.
-      </span>
-
-      <div class="appointment__toast">
-        <div class="toast-content">
-          <div class="toast-message">
-            <span class="toast__title">Request sent</span>
-            <span class="toast__description">
-              Wait and we will contact you
-            </span>
-          </div>
-        </div>
-         close icon here 
-        <div class="toast__progress"></div>
-      </div>
-    </section>  -->
-
-    <section id="contact" class="contact">
-      <div class="contact-details">
+  <section id="prices" class="prices">
+    <div class="prices-container">
+      <div class="prices-heading">
         <span class="tag">Barbershop Neighborhood</span>
-        <h3 class="section__heading contact-details__title">
-          Our contacts
-        </h3>
-        <ul class="contact-details__list">
-          <li class="contact-details__item">
-            <img src="./assets/icons/location-pin.svg" alt="ícone de localização" class="contact-details__icon">
-            <address>
-              Moskovyan 33, Yerevan, Armenia
-            </address>
-          </li>
-          <!-- <li class="contact-details__item">
-            <img src="./assets/icons/email.svg" alt="ícone de email" class="contact-details__icon">
-            <a href="mailto:barbearia@alura.com" class="contact-details__link">
-              barbearia@alura.com
-            </a>
-          </li> -->
-          <li class="contact-details__item">
-            <img src="./assets/icons/phone.svg" alt="ícone de telefone" class="contact-details__icon">
-            <a href="tel:+374-44-16-16-19" class="phone-link">+374 44 16 16 19</a>
-          </li>
-        </ul>
+        <h2 class="section__heading prices-heading__title">
+          Our Prices
+        </h2>
       </div>
 
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.9470744840182!2d44.51028977558134!3d40.1879912695301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd1e77778dc3%3A0x2748cc475ce0eeb1!2s33%20Moskovyan%20Street%2C%20Yerevan!5e0!3m2!1sen!2sam!4v1719919764420!5m2!1sen!2sam"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen=""
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="true" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade" class="contact__map"></iframe>
-    </section>
-  </div>
+      <div class="prices__card-container">
+        <div class="prices__card">
+          <ul class="prices__card-list">
+            <li class="prices__card-item">
+              <span class="prices__item-content">
+                Styling
+              </span>
+              <div class="prices__card-separator"></div>
+              <span class="prices__item-content">AMD 2.000</span>
+            </li>
+            <li class="prices__card-item">
+              <span class="prices__item-content">
+                Facial care and black mask
+              </span>
+              <div class="prices__card-separator"></div>
+              <span class="prices__item-content">AMD 5.000</span>
+            </li>
+            <li class="prices__card-item">
+              <span class="prices__item-content">
+                Kids haircut
+              </span>
+              <div class="prices__card-separator"></div>
+              <span class="prices__item-content">AMD 6.000</span>
+            </li>
+            <li class="prices__card-item">
+              <span class="prices__item-content">Haircut and beard styling</span>
+              <div class="prices__card-separator"></div>
+              <span class="prices__item-content">AMD 10.000</span>
+            </li>
+            <li class="prices__card-item">
+              <span class="prices__item-content">Haircut</span>
+              <div class="prices__card-separator"></div>
+              <span class="prices__item-content">AMD 6.000 - 8.000</span>
+            </li>
+            <li class="prices__card-item">
+              <span class="prices__item-content">
+                Beard styling
+              </span>
+              <div class="prices__card-separator"></div>
+              <span class="prices__item-content">AMD 4.000 - 5.000</span>
+            </li>
+            <li class="prices__card-item">
+              <span class="prices__item-content">
+                Beard coloring
+              </span>
+              <div class="prices__card-separator"></div>
+              <span class="prices__item-content">AMD 2.000 - 5.000</span>
+            </li>
+            <li class="prices__card-item">
+              <span class="prices__item-content">
+                Hair coloring
+              </span>
+              <div class="prices__card-separator"></div>
+              <span class="prices__item-content">AMD 3.000 - 5.000</span>
+            </li>
+            <li class="prices__card-item">
+              <span class="prices__item-content">
+                Hair removal with wax
+              </span>
+              <div class="prices__card-separator"></div>
+              <span class="prices__item-content">AMD 1.000 - 3.000</span>
+            </li>
+            <li class="prices__card-item">
+              <span class="prices__item-content">
+                Hair and beard coloring
+              </span>
+              <div class="prices__card-separator"></div>
+              <span class="prices__item-content">AMD 5.000 - 10.000</span>
+            </li>
+          </ul>
+          <a href="https://n1012317.alteg.io/company/959932/personal/select-master?o="
+            class="primary-btn prices__card-btn" target="_blank">
+            Schedule your appointment
+          </a>
+        </div>
+
+        <img src="./assets/images/barber-working.jpg" alt="nosso barbeiro cortando cabelo" class="prices__img"
+          style="object-fit: cover">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="contact-details">
+      <span class="tag">Barbershop Neighborhood</span>
+      <h3 class="section__heading contact-details__title">
+        Our contacts
+      </h3>
+      <ul class="contact-details__list">
+        <li class="contact-details__item">
+          <img src="./assets/icons/location-pin.svg" alt="ícone de localização" class="contact-details__icon">
+          <address>
+            Moskovyan 33, Yerevan, Armenia
+          </address>
+        </li>
+        <li class="contact-details__item">
+          <img src="./assets/icons/phone.svg" alt="ícone de telefone" class="contact-details__icon">
+          <a href="tel:+374-44-16-16-19" class="phone-link">+374 44 16 16 19</a>
+        </li>
+      </ul>
+    </div>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.9470744840182!2d44.51028977558134!3d40.1879912695301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd1e77778dc3%3A0x2748cc475ce0eeb1!2s33%20Moskovyan%20Street%2C%20Yerevan!5e0!3m2!1sen!2sam!4v1719919764420!5m2!1sen!2sam"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen=""
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="true" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" class="contact__map"></iframe>
+  </section>
 
   <div class="footer">
-    <!-- <div class="footer__info">
-      <div class="footer__info-container">
-        <div class="footer__info-content">
-          <h4 class="footer__info-title">
-            Barbershop<em>Neighborhood</em>
-          </h4>
-          <p class="footer__content-description">
-            The main component of a healthy environment for
-            self-esteem is that it needs to be stimulating.
-            It must provide unconditional heat.
-          </p>
-          
-        </div>
-
-         <div class="footer__info-news">
-          <h5 class="footer__news-title">Newsletter</h5>
-          <form class="footer__news-form">
-            <input type="email" placeholder="seu@email.com" aria-label="informe seu email para novidades"
-              class="footer__news-input" required>
-            <button type="submit" class="primary-btn footer__news-btn">
-              Sign me up
-            </button>
-          </form>
-          <span class="footer__news-description">
-            Stay up to date with our promotions and new products
-            and our services.
-          </span>
-        </div> 
-      </div>
-    </div> -->
-
     <div class="footer__copyright">
       <div class="footer__copyright-container">
         <ul class="footer__social-media">
@@ -504,7 +389,25 @@
   </div>
 
   <script src="./js/main.js"></script>
-  <script src="./js/toast.js"></script>
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+    new Swiper('.swiper', {
+      autoplay: true,
+      effect: "coverflow",
+      loop: true,
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 10,
+        stretch: 0,
+        depth: 50,
+        modifier: 1,
+        slideShadows: false,
+      },
+    })
+  </script>
 </body>
 
 </html>

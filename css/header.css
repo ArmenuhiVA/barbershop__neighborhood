@@ -1,8 +1,7 @@
 .header {
   height: 100vh;
-  background-image: url(../assets/images/hero-img.jpg);
+  background-image: url(../assets/gallery/photo19.jpg);
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   background-color: var(--gray-800);
 }
@@ -27,7 +26,7 @@
 }
 
 .header__title {
-  font-family: var(--font-heading);
+  font-family: var(--font-heading), serif;
   font-size: 1.5rem;
 }
 
@@ -103,6 +102,7 @@
   text-align: center;
   font-family: var(--font-heading);
   color: var(--white);
+  text-shadow: 1px 1px 20px black;
 }
 
 .content-intro__message {
